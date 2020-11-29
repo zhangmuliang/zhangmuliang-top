@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
     .header-nav-left{
         margin-left: 200px;
         height: 100px;
@@ -20,16 +21,18 @@
     }
     .header-nav-right{
         margin-right: 200px;
-        .nav-item{
-            font-size: 20px;
+        .link-button{
             margin-left: 40px;
+            .nav-item{
+                font-size: 20px;
+            }
         }
     }
 }
 
 .inactive{
     height: 0;
-    opacity: .5;
+    opacity: 0;
 }
 
 .active{

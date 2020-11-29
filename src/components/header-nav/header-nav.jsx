@@ -40,8 +40,8 @@ class HeaderNav extends Component {
                     <LinkButton onClick={() => this.props.history.push('/technology')}>
                         <span className="nav-item">我的技术栈</span>
                         </LinkButton>
+                    <LinkButton><span className="nav-item">求职意向</span></LinkButton>
                     <LinkButton><span className="nav-item">项目经历</span></LinkButton>
-                    <LinkButton><span className="nav-item">求职目标</span></LinkButton>
                     <LinkButton><span className="nav-item">学习博客</span></LinkButton>
                 </div>
             </div>
