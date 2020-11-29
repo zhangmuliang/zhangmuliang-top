@@ -1,0 +1,36 @@
+.header-nav {
+  position: fixed;
+  top: 0;
+  background-color: #3c8cff;
+  height: 100px;
+  width: 100%;
+  transition-property: height, opacity;
+  transition-duration: 1s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav .header-nav-left {
+  margin-left: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.header-nav .header-nav-left img {
+  height: 70px;
+}
+.header-nav .header-nav-right {
+  margin-right: 200px;
+}
+.header-nav .header-nav-right .nav-item {
+  font-size: 20px;
+  margin-left: 40px;
+}
+.inactive {
+  height: 0;
+  opacity: 0.5;
+}
+.active {
+  height: 100px;
+  opacity: 1;
+}
