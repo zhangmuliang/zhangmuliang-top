@@ -16,11 +16,11 @@ export default class HomeInformation extends Component {
     state = {
         left: -700
     }
-    
+
     clickLeft = () => {
-        if(moving){
+        if (moving) {
             return
-        }else{
+        } else {
             moving = true
         }
         let newleft = this.state.left;
@@ -34,7 +34,7 @@ export default class HomeInformation extends Component {
             this.setState({
                 left: newleft,
             })
-            if(newleft >= 0){
+            if (newleft >= 0) {
                 this.setState({
                     left: -2800,
                 })
@@ -43,9 +43,9 @@ export default class HomeInformation extends Component {
     }
 
     clickRight = () => {
-        if(moving){
+        if (moving) {
             return
-        }else{
+        } else {
             moving = true
         }
         let newleft = this.state.left;
@@ -59,7 +59,7 @@ export default class HomeInformation extends Component {
             this.setState({
                 left: newleft,
             })
-            if(newleft <= -3500){
+            if (newleft <= -3500) {
                 this.setState({
                     left: -700,
                 })
@@ -79,12 +79,14 @@ export default class HomeInformation extends Component {
                         前端初学者一枚，这是我的第一个正式项目，基于React技术栈，布局设计仿照字节跳动官方网站。
                     </p>
                 </div>
-                <div className="information-right">
+                <div className="information-right" >
                     <LinkButton id="left-button">
                         <LeftOutlined onClick={() => { this.clickLeft() }} />
                     </LinkButton>
 
-                    <ul id="img-ul" style={{ left: this.state.left + "px" }}>
+                    <ul id="img-ul"
+                        style={{ left: this.state.left + "px" }}
+                    >
                         <li className="img-list">
                             <img src={inform4} alt="-4" />
                             <div className="bottom">

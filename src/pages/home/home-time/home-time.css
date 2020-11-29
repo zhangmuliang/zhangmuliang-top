@@ -1,0 +1,86 @@
+.home-time {
+  margin-top: 200px;
+}
+.home-time .home-top {
+  margin-left: 200px;
+  width: 700px;
+}
+.home-time .home-top .title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.home-time .home-bottom {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.home-time .home-bottom #bottom-list {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  transform: translateX(-350px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: left;
+  transition-duration: 1s;
+}
+.home-time .home-bottom #bottom-list .bottom-item .home-time-card {
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-right: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.home-time .home-bottom #bottom-list .bottom-item .home-time-card .time-img {
+  width: 50%;
+  height: 100%;
+}
+.home-time .home-bottom #bottom-list .bottom-item .home-time-card .time {
+  font-size: 40px;
+  font-weight: bold;
+}
+.home-time .home-bottom #bottom-list .bottom-item .home-time-card .detail {
+  font-size: 20px;
+  color: gray;
+}
+.home-time .home-bottom #bottom-line-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 500px;
+  transform: translateX(-30px);
+  transition-property: left;
+  transition-duration: 1s;
+}
+.home-time .home-bottom #bottom-line-list .bottom-line-item .home-time-line {
+  border-radius: 50%;
+  background-color: #3c8cff;
+  margin-right: 150px;
+  position: relative;
+}
+.home-time .home-bottom #bottom-line-list .bottom-line-item .home-time-line::after {
+  position: absolute;
+  transform: translateX(-180px);
+  content: "";
+  border-top: 2px solid #3c8cff;
+  width: 360px;
+  top: 50%;
+  z-index: -1;
+}
+.home-time .home-bottom #bottom-line-list .bottom-line-item .timeInactive {
+  width: 30px;
+  height: 30px;
+}
+.home-time .home-bottom #bottom-line-list .bottom-line-item .timeActive {
+  width: 60px;
+  height: 60px;
+}
