@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
-import LinkButton from "../link-button/link-button";
 import {ArrowRightOutlined} from "@ant-design/icons"
 
 import logo from "../../assets/images/logo.png";
@@ -19,43 +18,43 @@ class FooterNav extends Component {
                     <div className="footer-nav-right">
                         <div className="nav-right">
                             <p>关于小张</p>
-                            <LinkButton>
-                                <p className="nav-item">企业文化</p>
-                            </LinkButton>
-                            <LinkButton>
-                                <p className="nav-item">大事记</p>
-                            </LinkButton>
-                            <LinkButton>
+                            <a href="/#">
+                                <p className="nav-item">基本信息</p>
+                            </a>
+                            <a href="/#">
+                                <p className="nav-item">教育经历</p>
+                            </a>
+                            <a href="/#">
                                 <p className="nav-item">我的技术栈</p>
-                            </LinkButton>
-                            <LinkButton>
-                                <p className="nav-item">联系小张</p>
-                            </LinkButton>
+                            </a>
+                            <a href="/#">
+                                <p className="nav-item">联系方式</p>
+                            </a>
                         </div>
 
                         <div className="nav-right">
                             <p>求职意向</p>
-                            <LinkButton>
+                            <a href="/#">
                                 <p className="nav-item">求职意向</p>
-                            </LinkButton>
+                            </a>
                         </div>
                         <div className="nav-right">
                             <p>项目经历</p>
-                            <LinkButton>
+                            <a href="/#">
                                 <p className="nav-item">React商品后台管理页面</p>
-                            </LinkButton>
-                            <LinkButton>
+                            </a>
+                            <a href="/#">
                                 <p className="nav-item">仿字节跳动官网个人简历</p>
-                            </LinkButton>
+                            </a>
                         </div>
                         <div className="nav-right">
                             <p>学习博客</p>
-                            <LinkButton>
+                            <a href="/#">
                                 <p className="nav-item">
                                     学习博客
                                     <ArrowRightOutlined style={{marginLeft:"2px"}}/>
                                 </p>
-                            </LinkButton>
+                            </a>
                         </div>
                     </div>
                 </div>

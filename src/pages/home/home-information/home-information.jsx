@@ -76,7 +76,10 @@ export default class HomeInformation extends Component {
                         基本信息
                     </p>
                     <p className="detail">
-                        前端初学者一枚，这是我的第一个正式项目，基于React技术栈，布局设计仿照字节跳动官方网站。
+                        前端初学者一枚，这是我的第一个项目，基于React技术栈，布局设计仿照字节跳动官方网站。
+                    </p>
+                    <p className="detail">
+                        网站中还存在着许多不足之处，目前正在构建各个路由间的内容，而下一步计划进行适应性布局的调整。
                     </p>
                 </div>
                 <div className="information-right" >

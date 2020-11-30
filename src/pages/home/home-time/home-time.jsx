@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import LinkButton from "../../../components/link-button/link-button";
-import time1 from "../../../assets/images/time1.png"
-import time2 from "../../../assets/images/time2.png"
-import time3 from "../../../assets/images/time3.png"
+import fuzhoudaxue1 from "../../../assets/images/fuzhoudaxue1.jpg"
+import fuzhoudaxue2 from "../../../assets/images/fuzhoudaxue2.jpg"
+import beikeda1 from "../../../assets/images/beikeda1.jpg"
+import beikeda2 from "../../../assets/images/beikeda2.jpg"
 
 import './home-time.less'
 
@@ -43,7 +44,7 @@ export default class HomeTime extends Component {
                     >
                         <li className="bottom-item">
                             <div className="home-time-card">
-                                <img src={time1} alt="" className="time-img" />
+                                <img src={fuzhoudaxue1} alt="" className="time-img" />
                                 <div className="words">
                                     <p className="time">2014年9月</p>
                                     <p className="detail">入学福州大学</p>
@@ -52,7 +53,7 @@ export default class HomeTime extends Component {
                         </li>
                         <li className="bottom-item">
                             <div className="home-time-card">
-                                <img src={time1} alt="" className="time-img" />
+                                <img src={fuzhoudaxue2} alt="" className="time-img" />
                                 <div className="words">
                                     <p className="time">2018年6月</p>
                                     <p className="detail">本科顺利毕业</p>
@@ -61,7 +62,7 @@ export default class HomeTime extends Component {
                         </li>
                         <li className="bottom-item">
                             <div className="home-time-card">
-                                <img src={time2} alt="" className="time-img" />
+                                <img src={beikeda1} alt="" className="time-img" />
                                 <div className="words">
                                     <p className="time">2018年9月</p>
                                     <p className="detail">入学北京科技大学</p>
@@ -70,7 +71,7 @@ export default class HomeTime extends Component {
                         </li>
                         <li className="bottom-item">
                             <div className="home-time-card">
-                                <img src={time3} alt="" className="time-img" />
+                                <img src={beikeda2} alt="" className="time-img" />
                                 <div className="words">
                                     <p className="time">2021年1月</p>
                                     <p className="detail">研究生即将毕业</p>

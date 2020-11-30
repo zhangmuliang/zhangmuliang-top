@@ -29,11 +29,13 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-.footer-nav .footer-wrapper .footer-nav-right .nav-right .link-button {
+.footer-nav .footer-wrapper .footer-nav-right .nav-right a {
   display: block;
 }
-.footer-nav .footer-wrapper .footer-nav-right .nav-right .link-button .nav-item {
+.footer-nav .footer-wrapper .footer-nav-right .nav-right a .nav-item {
   font-size: 18px;
+  color: white;
+  font-weight: normal;
   margin-bottom: 5px;
 }
 .footer-nav .footer-bottom {
