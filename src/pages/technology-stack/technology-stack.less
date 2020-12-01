@@ -1,0 +1,104 @@
+.technology-out{
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfa;
+    overflow: hidden;
+    position: relative;
+    #technology-back{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: 1s;
+        .img-items{
+            height: 100%;
+            width: 100%;
+            #technology-html{
+                background-image: url(../../assets/images/background-html.jpg);
+            }
+            #technology-css{
+                background-image: url(../../assets/images/background-css.jpg);
+            }
+            #technology-js{
+                background-image: url(../../assets/images/background-js.jpg);
+            }
+            #technology-es6{
+                background-image: url(../../assets/images/background-es6.jpg);
+            }
+            #technology-react{
+                background-image: url(../../assets/images/background-react.jpg);
+            }
+            #technology-git{
+                background-image: url(../../assets/images/background-git.jpg);
+            }
+            .background-img{
+                background-size: 100%;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .item-left-wrapper{
+                    position: absolute;
+                    top: 30%;
+                    left: 10%;
+                    width: 20vw;
+                    height: 45vh;
+                    padding-left: 2vw;
+                    padding-top: 2vw;
+                    background-color: rgb(253, 244, 244);
+                    border-radius: 10%;
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+                    .title{
+                        font-size: 50px;
+                        font-weight: bold;
+                        margin-bottom: 0.2em;
+                    }
+                    .proficiency{
+                        font-size: 25px;
+                        color: gray;
+                        span{
+                            color: red;
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+                    }
+                    .detail{
+                        font-size: 18px;
+                        color: gray;
+                    }
+                }
+            }
+    
+        }
+    }
+    .icon-wrapper{
+        position: absolute;
+        top: 18%;
+        right: 10%;
+        height: 80%;
+        width: 5%;
+        // background-color: #bfa;
+        #technology-icon{
+            text-align: center;
+            .icon-items{
+                .icon-line{
+                    // background-color: black;
+                    margin-bottom: 2vw;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .iconActive{
+                    width: 5vw;
+                    height: 5vw;
+                }
+                .iconInactive{
+                    width: 3vw;
+                    height: 3vw;
+                }  
+            }
+        }
+    }
+}

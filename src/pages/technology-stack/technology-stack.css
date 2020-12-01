@@ -1,0 +1,99 @@
+.technology-out {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bfa;
+  overflow: hidden;
+  position: relative;
+}
+.technology-out #technology-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.technology-out #technology-back .img-items {
+  height: 100%;
+  width: 100%;
+}
+.technology-out #technology-back .img-items #technology-html {
+  background-image: url(../../assets/images/background-html.jpg);
+}
+.technology-out #technology-back .img-items #technology-css {
+  background-image: url(../../assets/images/background-css.jpg);
+}
+.technology-out #technology-back .img-items #technology-js {
+  background-image: url(../../assets/images/background-js.jpg);
+}
+.technology-out #technology-back .img-items #technology-es6 {
+  background-image: url(../../assets/images/background-es6.jpg);
+}
+.technology-out #technology-back .img-items #technology-react {
+  background-image: url(../../assets/images/background-react.jpg);
+}
+.technology-out #technology-back .img-items #technology-git {
+  background-image: url(../../assets/images/background-git.jpg);
+}
+.technology-out #technology-back .img-items .background-img {
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.technology-out #technology-back .img-items .background-img .item-left-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 20vw;
+  height: 45vh;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  background-color: #fdf4f4;
+  border-radius: 10%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.technology-out #technology-back .img-items .background-img .item-left-wrapper .title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.technology-out #technology-back .img-items .background-img .item-left-wrapper .proficiency {
+  font-size: 25px;
+  color: gray;
+}
+.technology-out #technology-back .img-items .background-img .item-left-wrapper .proficiency span {
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+}
+.technology-out #technology-back .img-items .background-img .item-left-wrapper .detail {
+  font-size: 18px;
+  color: gray;
+}
+.technology-out .icon-wrapper {
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  height: 80%;
+  width: 5%;
+}
+.technology-out .icon-wrapper #technology-icon {
+  text-align: center;
+}
+.technology-out .icon-wrapper #technology-icon .icon-items .icon-line {
+  margin-bottom: 2vw;
+}
+.technology-out .icon-wrapper #technology-icon .icon-items .icon-line img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.technology-out .icon-wrapper #technology-icon .icon-items .iconActive {
+  width: 5vw;
+  height: 5vw;
+}
+.technology-out .icon-wrapper #technology-icon .icon-items .iconInactive {
+  width: 3vw;
+  height: 3vw;
+}

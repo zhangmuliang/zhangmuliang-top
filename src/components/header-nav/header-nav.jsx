@@ -1,32 +1,20 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
+import PropTypes from "prop-types"
+
 import LinkButton from "../link-button/link-button"
 
 import logo from "../../assets/images/logo.png";
 import "./header-nav.less"
 
 class HeaderNav extends Component {
-    state = {
-        active: "active",
+    static propTypes = {
+        active: PropTypes.string.isRequired,
     }
-
-    componentDidMount() {
-        window.addEventListener('wheel', (e) => {
-            if (e.deltaY > 0) {
-                this.setState({
-                    active: "inactive"
-                })
-            } else if (e.deltaY < 0) {
-                this.setState({
-                    active: "active"
-                })
-            }
-        })
-    }
-
 
     render() {
-        const active = this.state.active
+        const pathNow = this.props.location.pathname
+        const active = (pathNow === '/technology')? 'active' : this.props.active
         return (
             <div className={`header-nav ${active}`}>
                 <Link to="/home" className="header-nav-left">
@@ -39,7 +27,7 @@ class HeaderNav extends Component {
                     </LinkButton>
                     <LinkButton onClick={() => this.props.history.push('/technology')}>
                         <span className="nav-item">我的技术栈</span>
-                        </LinkButton>
+                    </LinkButton>
                     <LinkButton><span className="nav-item">求职意向</span></LinkButton>
                     <LinkButton><span className="nav-item">项目经历</span></LinkButton>
                     <LinkButton><span className="nav-item">学习博客</span></LinkButton>

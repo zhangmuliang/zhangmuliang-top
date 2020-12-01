@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   background-color: #3c8cff;
-  height: 100px;
+  height: 15%;
   width: 100%;
   transition-property: height, opacity;
   transition-duration: 1s;
@@ -34,6 +34,6 @@
   opacity: 0;
 }
 .active {
-  height: 100px;
+  height: 15%;
   opacity: 1;
 }

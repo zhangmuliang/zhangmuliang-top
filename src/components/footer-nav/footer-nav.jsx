@@ -9,7 +9,7 @@ class FooterNav extends Component {
 
     render() {
         return (
-            <div className="footer-nav">
+            <div className="footer-nav" style={{display:this.props.location.pathname==='/technology'?'none':'block'}}>
                 <div className="footer-wrapper">
                     <Link to="/home" className="footer-nav-left">
                         <img src={logo} alt="logo" />
