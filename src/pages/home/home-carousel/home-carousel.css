@@ -1,19 +1,19 @@
 .background-wrapper .introduction-box {
   position: absolute;
-  left: 200px;
+  left: 10vw;
   top: 0;
-  width: 500px;
-  padding: 200px 50px 50px 50px;
+  width: 25vw;
+  padding: 10vw 3vw 3vw 3vw;
   z-index: 99;
   background-color: white;
   border-bottom-right-radius: 50%;
 }
 .background-wrapper .introduction-box .introduction {
-  font-size: 26px;
+  font-size: 2vw;
   color: gray;
 }
 .background-wrapper .introduction-box .detail {
-  font-size: 40px;
+  font-size: 2vw;
   font-weight: bold;
 }
 .background-wrapper .home-carousel-item {

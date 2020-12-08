@@ -51,10 +51,10 @@
   overflow: hidden;
 }
 .background-wrapper .target-wrapper .target-inner .target-list .target-detail p {
-  margin: 2vw 0;
+  padding: 2vw 0;
 }
-.background-wrapper .target-wrapper .target-inner .active .target-detail {
-  max-height: 8vw;
+.background-wrapper .target-wrapper .target-inner .target-active .target-detail {
+  max-height: 30vh;
   opacity: 1;
   font-size: 1.5vw;
   transition: 1s;

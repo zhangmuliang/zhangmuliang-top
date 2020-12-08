@@ -10,8 +10,8 @@ import './home-time.less'
 export default class HomeTime extends Component {
     state = {
         index: 0,
-        leftCard: 500,
-        leftLine: 500,
+        leftCard: 25,
+        leftLine: 25,
     }
 
     changeIndex = (newIndex) => {
@@ -19,8 +19,8 @@ export default class HomeTime extends Component {
         const oldleftCard = this.state.leftCard
         const oldleftLine = this.state.leftLine
         const indexChange = newIndex - oldIndex
-        const newleftCard = oldleftCard - indexChange * 900
-        const newleftLine = oldleftLine - indexChange * 180
+        const newleftCard = oldleftCard - indexChange * 45
+        const newleftLine = oldleftLine - indexChange * 9
         this.setState({
             index: newIndex,
             leftCard: newleftCard,
@@ -33,14 +33,14 @@ export default class HomeTime extends Component {
         return (
             <div className="home-time">
                 <div className="home-top">
-                    <p className="page-title">
+                    <p id="education" className="page-title">
                         教育经历
                     </p>
                 </div>
                 <div className="home-bottom" >
                     <ul
                         id="bottom-list"
-                        style={{ left: this.state.leftCard + "px" }}
+                        style={{ left: this.state.leftCard + "vw" }}
                     >
                         <li className="bottom-item">
                             <div className="home-time-card">
@@ -81,7 +81,7 @@ export default class HomeTime extends Component {
                     </ul>
                     <ul
                         id="bottom-line-list"
-                        style={{ left: this.state.leftLine + "px" }}
+                        style={{ left: this.state.leftLine + "vw" }}
                     >
                         <li className="bottom-line-item">
                             <LinkButton onClick={() => { this.changeIndex(0) }}>

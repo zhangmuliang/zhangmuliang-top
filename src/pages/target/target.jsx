@@ -23,7 +23,7 @@ export default class Target extends Component {
                             求职意向
                         </div>
 
-                        <div className={`target-list ${index === 0 ? 'active' : ''}`}>
+                        <div className={`target-list ${index === 0 ? 'target-active' : ''}`}>
                             <div className="target-item" onClick={() => { this.changeIndex(0) }}>
                                 <div className="target-title">期望岗位</div>
                                 <div className="target-icon">+</div>
@@ -33,7 +33,7 @@ export default class Target extends Component {
                             </div>
                         </div>
 
-                        <div className={`target-list ${index === 1 ? 'active' : ''}`}>
+                        <div className={`target-list ${index === 1 ? 'target-active' : ''}`}>
                             <div className="target-item" onClick={() => { this.changeIndex(1) }}>
                                 <div className="target-title">期望城市</div>
                                 <div className="target-icon">+</div>
@@ -43,7 +43,7 @@ export default class Target extends Component {
                             </div>
                         </div>
 
-                        <div className={`target-list ${index === 2 ? 'active' : ''}`}>
+                        <div className={`target-list ${index === 2 ? 'target-active' : ''}`}>
                             <div className="target-item" onClick={() => { this.changeIndex(2) }}>
                                 <div className="target-title">可入职时间</div>
                                 <div className="target-icon">+</div>
@@ -57,7 +57,7 @@ export default class Target extends Component {
                             </div>
                         </div>
 
-                        <div className={`target-list ${index === 3 ? 'active' : ''}`}>
+                        <div className={`target-list ${index === 3 ? 'target-active' : ''}`}>
                             <div className="target-item" onClick={() => { this.changeIndex(3) }}>
                                 <div className="target-title">可支配时间</div>
                                 <div className="target-icon">+</div>

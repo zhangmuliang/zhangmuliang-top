@@ -10,7 +10,7 @@ export default class Project extends Component{
                     <div className="project-card">
                         <div className="face1"> 
                             <div className="page-title">
-                                React后台管理项目
+                            商品后台管理项目
                             </div>
                         </div>
                         <div className="face2"> 

@@ -5,6 +5,7 @@ import LinkButton from "../link-button/link-button"
 
 import logo from "../../assets/images/logo.png";
 import { throttle } from "../../utils/throttle";
+import {myBlog} from "../../utils/myblog"
 import "./header-nav.less"
 
 
@@ -66,7 +67,9 @@ class HeaderNav extends Component {
                     <LinkButton onClick={() => this.props.history.push('/project')}>
                         <span className="nav-item">项目经历</span>
                     </LinkButton>
-                    <LinkButton><span className="nav-item">学习博客</span></LinkButton>
+                    <LinkButton onClick={myBlog}>
+                        <span className="nav-item">学习博客</span>
+                    </LinkButton>
                 </div>
             </div>
         )

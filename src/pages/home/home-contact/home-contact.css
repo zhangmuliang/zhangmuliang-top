@@ -1,9 +1,8 @@
 .home-contact {
-  margin-top: 200px;
+  margin-top: 20vh;
 }
 .home-contact .home-contact-top {
   margin-left: 15%;
-  width: 700px;
 }
 .home-contact .home-contact-bottom {
   display: flex;
@@ -12,12 +11,12 @@
 }
 .home-contact .home-contact-bottom .title-small {
   flex: 0 0 50%;
-  margin-bottom: 100px;
+  margin-bottom: 10vh;
 }
 .home-contact .home-contact-bottom .title-small p {
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
 }
 .home-contact .home-contact-bottom .title-small a {
-  font-size: 25px;
+  font-size: 1.5vw;
 }

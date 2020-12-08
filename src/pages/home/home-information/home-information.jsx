@@ -9,12 +9,12 @@ import inform4 from "../../../assets/images/inform4.jpg"
 
 import "./home-information.less"
 import LinkButton from "../../../components/link-button/link-button";
-import { MOVE_LENGTH } from "../../../utils/constants";
+import { MOVE_LENGTH,IMG_LENGTH } from "../../../utils/constants";
 
 var moving = false;
 export default class HomeInformation extends Component {
     state = {
-        left: -700
+        left: -IMG_LENGTH
     }
 
     clickLeft = () => {
@@ -24,7 +24,7 @@ export default class HomeInformation extends Component {
             moving = true
         }
         let newleft = this.state.left;
-        const targetleft = newleft + 700;
+        const targetleft = newleft + IMG_LENGTH;
         var interval = setInterval(() => {
             if (newleft === targetleft - MOVE_LENGTH) {
                 clearInterval(interval)
@@ -36,7 +36,7 @@ export default class HomeInformation extends Component {
             })
             if (newleft >= 0) {
                 this.setState({
-                    left: -2800,
+                    left: -140,
                 })
             }
         }, 20);
@@ -49,7 +49,7 @@ export default class HomeInformation extends Component {
             moving = true
         }
         let newleft = this.state.left;
-        const targetleft = newleft - 700;
+        const targetleft = newleft - IMG_LENGTH;
         var interval = setInterval(() => {
             if (newleft === targetleft + MOVE_LENGTH) {
                 clearInterval(interval)
@@ -59,9 +59,9 @@ export default class HomeInformation extends Component {
             this.setState({
                 left: newleft,
             })
-            if (newleft <= -3500) {
+            if (newleft <= -175) {
                 this.setState({
-                    left: -700,
+                    left: -IMG_LENGTH,
                 })
             }
         }, 20);
@@ -72,14 +72,14 @@ export default class HomeInformation extends Component {
         return (
             <div className="home-information">
                 <div className="information-left">
-                    <p className="page-title">
+                    <p id="base-information" className="page-title">
                         基本信息
                     </p>
                     <p className="detail">
-                        前端初学者一枚，这是我的第一个项目，基于React技术栈，布局设计仿照字节跳动官方网站。
+                        前端初学者一枚，这是我的第一个项目，基于React技术栈，设计风格仿照字节跳动官方网站。
                     </p>
                     <p className="detail">
-                        网站中还存在着许多不足之处，目前正在构建各个路由间的内容，而下一步计划进行适应性布局的调整。
+                        网站中还存在着许多不足之处，将在未来的日子里不断优化。
                     </p>
                 </div>
                 <div className="information-right" >
@@ -88,7 +88,7 @@ export default class HomeInformation extends Component {
                     </LinkButton>
 
                     <ul id="img-ul"
-                        style={{ left: this.state.left + "px" }}
+                        style={{ left: this.state.left + "vw" }}
                     >
                         <li className="img-list">
                             <img src={inform4} alt="-4" />
