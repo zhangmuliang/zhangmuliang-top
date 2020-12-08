@@ -58,7 +58,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-html" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">HTML</p>
+                                <p className="page-title">HTML</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;
@@ -75,7 +75,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-css" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">CSS</p>
+                                <p className="page-title">CSS</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;
@@ -92,7 +92,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-js" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">JavaScript</p>
+                                <p className="page-title">JavaScript</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;
@@ -109,7 +109,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-es6" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">ES6</p>
+                                <p className="page-title">ES6</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;
@@ -126,7 +126,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-react" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">React</p>
+                                <p className="page-title">React</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;
@@ -143,7 +143,7 @@ class TechnologyStack extends Component {
                     <li className="img-items">
                         <div id="technology-git" className="background-img">
                             <div className="item-left-wrapper">
-                                <p className="title">Git</p>
+                                <p className="page-title">Git</p>
                                 <p className="proficiency">
                                     了解
                                     &lt;

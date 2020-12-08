@@ -9,7 +9,7 @@ export default class HomeContact extends Component {
             <div className="home-contact">
 
                 <div className="home-contact-top">
-                    <p id='contact-zhang' className="title">
+                    <p id='contact-zhang' className="page-title">
                         联系方式
                     </p>
                 </div>

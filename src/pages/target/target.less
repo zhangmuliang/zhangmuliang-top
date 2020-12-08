@@ -1,0 +1,62 @@
+.target-out{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #ccdffa;
+    .target-wrapper{
+        width: 50vw;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 5vw;
+        background-color: white;
+        box-shadow: 0 0 2vw rgba(0,0,0,0.3);
+        .target-inner{
+            margin-top: 3vw;
+            margin-left: 5vw;
+            .target-list{
+                width: 40vw;
+                border: 1px solid white;
+                background-color: #7fb2fa;
+                .target-item{
+                    padding: 0 1vw;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: #3c8cff;
+                    font-size: 1vw;
+                    font-weight: bold;
+                    color: white;
+                    height: 3vw;
+                    .target-icon{
+                        width: 2vw;
+                        height: 2vw;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: solid 2px white;
+                    }
+                }
+                
+                .target-detail{
+                    text-align: center;
+                    font-size: 1.5vw;
+                    color: white;
+                    max-height: 0;
+                    overflow: hidden;
+                    p{
+                        margin: 2vw 0;
+                    }
+                }
+            }
+            .active .target-detail{
+                max-height: 8vw;
+                transition: .5s;
+            }
+        }
+    }
+}

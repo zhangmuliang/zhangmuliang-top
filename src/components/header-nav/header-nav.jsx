@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import LinkButton from "../link-button/link-button"
 
 import logo from "../../assets/images/logo.png";
-import {throttle} from "../../utils/throttle";
+import { throttle } from "../../utils/throttle";
 import "./header-nav.less"
 
 
@@ -25,19 +25,19 @@ class HeaderNav extends Component {
         }
     }
 
-    myfun = throttle(this.changeActive,500)
+    myfun = throttle(this.changeActive, 500)
 
     componentDidMount() {
-        if(this.props.location.pathname !== '/technology')
-        window.addEventListener('wheel', this.myfun)
+        if (this.props.location.pathname !== '/technology')
+            window.addEventListener('wheel', this.myfun)
     }
 
-    componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps) {
         const newPath = nextProps.location.pathname
-        if(newPath !== this.props.location.pathname){
-            if(newPath==='/technology'){
+        if (newPath !== this.props.location.pathname) {
+            if (newPath === '/technology') {
                 window.removeEventListener('wheel', this.myfun)
-            }else{
+            } else {
                 window.addEventListener('wheel', this.myfun)
             }
         }
@@ -46,7 +46,7 @@ class HeaderNav extends Component {
 
     render() {
         const pathNow = this.props.location.pathname
-        const active = (pathNow === '/technology')? 'active' : this.state.active
+        const active = (pathNow === '/technology') ? 'active' : this.state.active
         return (
             <div className={`header-nav ${active}`}>
                 <Link to="/home" className="header-nav-left">
@@ -60,7 +60,9 @@ class HeaderNav extends Component {
                     <LinkButton onClick={() => this.props.history.push('/technology')}>
                         <span className="nav-item">我的技术栈</span>
                     </LinkButton>
-                    <LinkButton><span className="nav-item">求职意向</span></LinkButton>
+                    <LinkButton onClick={() => this.props.history.push('/target')}>
+                        <span className="nav-item">求职意向</span>
+                    </LinkButton>
                     <LinkButton><span className="nav-item">项目经历</span></LinkButton>
                     <LinkButton><span className="nav-item">学习博客</span></LinkButton>
                 </div>

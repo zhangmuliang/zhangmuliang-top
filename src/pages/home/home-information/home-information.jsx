@@ -72,7 +72,7 @@ export default class HomeInformation extends Component {
         return (
             <div className="home-information">
                 <div className="information-left">
-                    <p className="title">
+                    <p className="page-title">
                         基本信息
                     </p>
                     <p className="detail">

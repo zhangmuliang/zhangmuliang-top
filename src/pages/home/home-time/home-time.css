@@ -5,10 +5,6 @@
   margin-left: 15%;
   width: 700px;
 }
-.home-time .home-top .title {
-  font-size: 50px;
-  font-weight: bold;
-}
 .home-time .home-bottom {
   position: relative;
   width: 1000px;
@@ -31,7 +27,7 @@
   width: 600px;
   height: 250px;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 2vw;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   margin-right: 300px;
   overflow: hidden;

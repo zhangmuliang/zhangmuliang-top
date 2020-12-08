@@ -33,7 +33,7 @@ export default class HomeTime extends Component {
         return (
             <div className="home-time">
                 <div className="home-top">
-                    <p className="title">
+                    <p className="page-title">
                         教育经历
                     </p>
                 </div>

@@ -53,11 +53,6 @@
   border-radius: 10%;
   box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5);
 }
-.technology-out #technology-back .img-items .background-img .item-left-wrapper .title {
-  font-size: 3vw;
-  font-weight: bold;
-  margin-bottom: 1vw;
-}
 .technology-out #technology-back .img-items .background-img .item-left-wrapper .proficiency {
   font-size: 1.5vw;
   color: gray;
