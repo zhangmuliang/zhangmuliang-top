@@ -8,6 +8,7 @@ import TechnologyStack from "./pages/technology-stack/technology-stack";
 import Target from "./pages/target/target";
 
 import './App.less'
+import Project from "./pages/project/project";
 export default class App extends Component {
 
     render() {
@@ -20,6 +21,7 @@ export default class App extends Component {
                             <Route path='/home' component={Home} />
                             <Route path='/technology' component={TechnologyStack}/>
                             <Route path='/target' component={Target}/>
+                            <Route path='/project' component={Project}/>
                             <Redirect to='/home' />
                         </Switch>
                     </div>

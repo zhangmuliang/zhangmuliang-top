@@ -17,7 +17,7 @@ export default class HomeCarousel extends Component {
             autoplaySpeed: 3000,
         }
         return (
-            <div className="home-carousel">
+            <div className="background-wrapper">
                 <div className="introduction-box">
                     <p className='introduction'>简介</p>
                     <p className="detail">我叫张木良，这是我的个人简历网站。</p>

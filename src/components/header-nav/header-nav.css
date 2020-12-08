@@ -29,6 +29,9 @@
 .header-nav .header-nav-right .link-button .nav-item {
   font-size: 20px;
 }
+.header-nav .header-nav-right .link-button:hover {
+  color: #00ff00;
+}
 .inactive {
   height: 0;
   opacity: 0;

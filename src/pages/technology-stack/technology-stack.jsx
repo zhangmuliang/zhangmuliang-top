@@ -49,7 +49,7 @@ class TechnologyStack extends Component {
     render() {
         const { index, translateY } = this.state
         return (
-            <div className="technology-out">
+            <div className="background-wrapper">
                 <ul
                     id="technology-back"
                     onWheel={(e) => this.throttleChangeWheel(e)}

@@ -1,0 +1,76 @@
+.background-wrapper{
+    position: relative;
+    .project-wrapper{
+        width: 70vw;
+        border: 1px solid red;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5vw;
+        background-color: white;
+        box-shadow: 0 1vw 2vw rgba(0,0,0,0.3);
+        .project-card{
+            width: 30vw;
+            height: 15vw;
+            margin: 3vw 0;
+            position: relative;
+            .face1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: 1s;
+                transform-origin: bottom;
+                background-color: #7fb2fa;
+                color: white;
+                text-shadow: 5px -5px black, 4px -4px white;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+            .face2{
+                width: 100%;
+                height: 100%;
+                background-color: #7fb2fa;
+                color: white;
+                transition: 1s;
+                transform-origin: top;
+                transform: translateY(100%) rotateX(90deg);
+                position: relative;
+                .detail{
+                    width: 80%;
+                    position: absolute;
+                    font-size: 1vw;
+                    font-weight: bold;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    a{
+                        color: white;
+                    }
+                    a:hover{
+                        color: rgb(0,255,0);
+                    }
+                }
+                
+            }
+        }
+        .project-card:hover .face1{
+            background-color: #3c8cff;
+            transform: translateY(-100%) rotateX(90deg);
+        }
+        .project-card:hover .face2{
+            transform: translateY(0%) rotateX(0deg);
+        }
+    }
+}

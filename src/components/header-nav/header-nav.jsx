@@ -63,7 +63,9 @@ class HeaderNav extends Component {
                     <LinkButton onClick={() => this.props.history.push('/target')}>
                         <span className="nav-item">求职意向</span>
                     </LinkButton>
-                    <LinkButton><span className="nav-item">项目经历</span></LinkButton>
+                    <LinkButton onClick={() => this.props.history.push('/project')}>
+                        <span className="nav-item">项目经历</span>
+                    </LinkButton>
                     <LinkButton><span className="nav-item">学习博客</span></LinkButton>
                 </div>
             </div>

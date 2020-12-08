@@ -16,7 +16,7 @@ export default class Target extends Component {
     render() {
         const index = this.state.index
         return (
-            <div className="target-out">
+            <div className="background-wrapper">
                 <div className="target-wrapper">
                     <div className="target-inner">
                         <div className="page-title">
