@@ -83,6 +83,7 @@ export default class HomeTime extends Component {
                         id="bottom-line-list"
                         style={{ left: this.state.leftLine + "vw" }}
                     >
+                        <div className="bottom-line"></div>
                         <li className="bottom-line-item">
                             <LinkButton onClick={() => { this.changeIndex(0) }}>
                                 <div className={`home-time-line ${index === 0 ? 'timeActive' : 'timeInactive'}`}>

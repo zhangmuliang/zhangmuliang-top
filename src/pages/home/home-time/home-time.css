@@ -47,14 +47,15 @@
 }
 .home-time .home-bottom #bottom-line-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 1vw;
+  bottom: 0.5vw;
   left: 25vw;
   transform: translateX(-1.5vw);
   transition-property: left;
   transition-duration: 1s;
+  font-size: 0;
 }
 .home-time .home-bottom #bottom-line-list .bottom-line-item .home-time-line {
   border-radius: 50%;
