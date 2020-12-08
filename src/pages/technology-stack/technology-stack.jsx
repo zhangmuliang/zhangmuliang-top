@@ -8,10 +8,10 @@ import esImg from "../../assets/images/es6.png"
 import reactImg from "../../assets/images/react.png"
 import gitImg from "../../assets/images/git.png"
 import LinkButton from "../../components/link-button/link-button";
+import {throttle} from "../../utils/throttle"
 
 import "./technology-stack.less"
 
-var wheelFlag = false
 class TechnologyStack extends Component {
     state = {
         index: 0,
@@ -29,11 +29,6 @@ class TechnologyStack extends Component {
     changeWheel = (e) => {
         const getUl = document.getElementById('technology-back')
         const maxWheel = getUl.childElementCount - 1;
-        if (wheelFlag) {
-            return
-        } else {
-            wheelFlag = true
-        }
         const oldIndex = this.state.index
         let newIndex
         if (e.deltaY > 0) {
@@ -47,10 +42,9 @@ class TechnologyStack extends Component {
             index: newIndex,
             translateY: newtranslateY,
         })
-        setTimeout(() => {
-            wheelFlag = false
-        }, 1000)
     }
+
+    throttleChangeWheel = throttle(this.changeWheel,1000)
 
     render() {
         const { index, translateY } = this.state
@@ -58,7 +52,7 @@ class TechnologyStack extends Component {
             <div className="technology-out">
                 <ul
                     id="technology-back"
-                    onWheel={(e) => this.changeWheel(e)}
+                    onWheel={(e) => this.throttleChangeWheel(e)}
                     style={{ transform: 'translateY(' + translateY + '%)' }}
                 >
                     <li className="img-items">

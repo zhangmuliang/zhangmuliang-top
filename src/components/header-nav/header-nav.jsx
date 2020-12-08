@@ -4,20 +4,16 @@ import { Link, withRouter } from "react-router-dom";
 import LinkButton from "../link-button/link-button"
 
 import logo from "../../assets/images/logo.png";
+import {throttle} from "../../utils/throttle";
 import "./header-nav.less"
 
-var wheelFlag = false
+
 class HeaderNav extends Component {
     state = {
         active: "active",
     }
 
     changeActive = (e) => {
-        if (wheelFlag) {
-            return
-        } else {
-            wheelFlag = true
-        }
         if (e.deltaY > 0) {
             this.setState({
                 active: "inactive"
@@ -27,23 +23,22 @@ class HeaderNav extends Component {
                 active: "active"
             })
         }
-        setTimeout(() => {
-            wheelFlag = false
-        }, 500)
     }
-    
+
+    myfun = throttle(this.changeActive,500)
+
     componentDidMount() {
         if(this.props.location.pathname !== '/technology')
-        window.addEventListener('wheel', this.changeActive)
+        window.addEventListener('wheel', this.myfun)
     }
 
     componentWillReceiveProps(nextProps){
         const newPath = nextProps.location.pathname
         if(newPath !== this.props.location.pathname){
             if(newPath==='/technology'){
-                window.removeEventListener('wheel', this.changeActive)
+                window.removeEventListener('wheel', this.myfun)
             }else{
-                window.addEventListener('wheel', this.changeActive)
+                window.addEventListener('wheel', this.myfun)
             }
         }
     }
